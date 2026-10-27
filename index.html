@@ -112,6 +112,12 @@ section.blk>.wrap>h2{font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.1;letter-s
 
 .contact .big{display:block;font-size:clamp(1.5rem,6.2vw,3.5rem);font-weight:800;letter-spacing:-.035em;line-height:1.1;word-break:break-word;margin:0 0 1rem}
 .contact p{margin:.25rem 0}
+.wa{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--rule);max-width:36rem}
+.wa h3{margin:0 0 .5rem;font-size:1.25rem;letter-spacing:-.01em}
+.wa .handle{margin:.5rem 0}
+.wa code{font-family:var(--mono);font-size:1.35rem;font-weight:700;background:linear-gradient(transparent 60%,var(--amber) 60%);user-select:all}
+@media (prefers-color-scheme:dark){.wa code{background:none;color:var(--amber)}}
+.wa .fine{color:var(--muted);font-size:.9rem}
 
 footer{padding:1.75rem 0 3rem;color:var(--muted);font-size:.9rem}
 footer p{margin:.25rem 0}
@@ -246,6 +252,13 @@ footer p{margin:.25rem 0}
       <h2>Tell me what you are trying to decide.</h2>
       <a class="big" href="mailto:deepak@transform-with.ai?subject=Introductory%20conversation">deepak@transform-with.ai</a>
       <p>Based in London. I reply within two working days.</p>
+
+      <div class="wa">
+        <h3>Prefer WhatsApp?</h3>
+        <p>Search for my WhatsApp Business username in the app:</p>
+        <p class="handle"><code>@transformwith.ai</code></p>
+        <p class="fine">For introductions only. Please do not send confidential material until we have agreed how to share it. WhatsApp usernames are rolling out country by country, so if the search finds nothing, email me.</p>
+      </div>
     </div>
   </section>
 </main>
@@ -253,7 +266,7 @@ footer p{margin:.25rem 0}
 <footer>
   <div class="wrap">
     <p>&copy; 2026 Transform with AI Ltd.</p>
-    <p>Registered in England and Wales. Company number: [COMPANY NUMBER].</p>
+    <p>Registered in England and Wales. Company number: 16590372.</p>
     <p><a href="#receipt">Privacy: this site collects nothing</a></p>
   </div>
 </footer>
