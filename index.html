@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transform with AI | Deepak Paramanand</title>
+<meta name="description" content="Independent AI consultancy for founders and executives: AI strategy, agentic AI architecture review, and responsible AI, privacy and governance.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://transform-with.ai/">
+<meta property="og:title" content="Transform with AI">
+<meta property="og:description" content="AI strategy, agentic AI architecture review, and responsible AI governance for founders and executives.">
+<meta property="og:url" content="https://transform-with.ai/">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --paper:#F3F5F7; --ink:#0F1B2D; --muted:#4A5868; --rule:#D3DAE1; --accent:#1F4FD8; --on-accent:#fff;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#0D1520;--ink:#E8EDF3;--muted:#A3B0BF;--rule:#26354A;--accent:#8FADFF;--on-accent:#0D1520}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1rem}
+@media(min-width:48rem){.wrap{padding:0 2rem}}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--on-accent);padding:.5rem 1rem}
+.skip:focus{left:1rem;top:1rem;z-index:10}
+
+header.top{padding:1.25rem 0;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+header.top a.mail{font-size:.95rem}
+
+.hero{padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5.5rem)}
+.hero h1{font-size:clamp(2.25rem,7.2vw,5rem);line-height:1.04;letter-spacing:-.03em;font-weight:700;margin:0 0 1.75rem;max-width:16ch}
+.hero h1 span{box-shadow:inset 0 -.22em 0 var(--accent);}
+@media (prefers-color-scheme:dark){.hero h1 span{box-shadow:inset 0 -.22em 0 color-mix(in srgb,var(--accent) 55%,transparent)}}
+.hero p.lede{font-size:clamp(1.15rem,2.4vw,1.4rem);max-width:38rem;color:var(--muted);margin:0 0 2rem}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:.8rem 1.35rem;font-weight:600;text-decoration:none;border-radius:4px}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+section.row{border-top:1px solid var(--rule);padding:2.25rem 0 2.75rem;display:grid;gap:1rem}
+@media(min-width:48rem){section.row{grid-template-columns:12rem 1fr;gap:2.5rem}}
+section.row h2{margin:0;font-size:1rem;font-weight:700;color:var(--muted)}
+.body>*:first-child{margin-top:0}
+.body h3{font-size:1.25rem;margin:2rem 0 .35rem;letter-spacing:-.01em;line-height:1.3}
+.body h3:first-child{margin-top:0}
+.body p{margin:.35rem 0 0;max-width:40rem}
+.body ul{margin:.5rem 0 0;padding-left:1.1rem;max-width:40rem}
+.body li{margin:.3rem 0}
+.steps{list-style:none;padding:0!important;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2rem 1fr;gap:.5rem;margin:1rem 0}
+.steps li::before{content:counter(s);font-weight:700;color:var(--accent)}
+
+.contact-line{font-size:clamp(1.35rem,4vw,2rem);font-weight:700;letter-spacing:-.02em;word-break:break-word}
+
+footer{border-top:1px solid var(--rule);padding:1.75rem 0 3rem;color:var(--muted);font-size:.9rem}
+footer p{margin:.25rem 0}
+
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/">Transform with AI</a>
+    <a class="mail" href="mailto:deepak@transform-with.ai">deepak@transform-with.ai</a>
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <h1>AI that works, and <span>stays yours.</span></h1>
+      <p class="lede">I help founders and executives decide where AI belongs in the business, check that the architecture will hold, and keep their data private while they do it.</p>
+      <a class="btn" href="mailto:deepak@transform-with.ai?subject=Introductory%20conversation">Email me</a>
+    </div>
+
+    <section class="row" id="work" aria-labelledby="h-work">
+      <h2 id="h-work">What I do</h2>
+      <div class="body">
+        <h3>AI strategy and roadmaps</h3>
+        <p>Where AI will pay back, where it will not, and what to build first. You get a plan your team can execute, with the trade-offs written down.</p>
+
+        <h3>Agentic AI: architecture review and technical due diligence</h3>
+        <p>An independent look at systems that use LLMs and agents. I test whether the design is sound, safe to run and affordable at scale. Useful before you build, before you buy, and before you invest.</p>
+
+        <h3>Responsible AI, privacy and governance</h3>
+        <p>Zero-data-retention setups, vendor and model choices, and practical alignment with the EU AI Act and the NIST AI Risk Management Framework. Policy that people can follow.</p>
+      </div>
+    </section>
+
+    <section class="row" id="how" aria-labelledby="h-how">
+      <h2 id="h-how">How I work</h2>
+      <div class="body">
+        <ol class="steps">
+          <li><div><strong>Talk.</strong> A free introductory call to see whether I can help.</div></li>
+          <li><div><strong>Scope.</strong> A short written proposal with deliverables, timeline and price.</div></li>
+          <li><div><strong>Deliver.</strong> Working sessions and written output you keep. No lock-in.</div></li>
+        </ol>
+        <p>I work alone, so you deal with the person doing the work.</p>
+      </div>
+    </section>
+
+    <section class="row" id="background" aria-labelledby="h-bg">
+      <h2 id="h-bg">Background</h2>
+      <div class="body">
+        <p>I have spent my career turning AI research into products that people use. I have led AI product and engineering work at JPMorgan Chase, Microsoft, Opus 2 and Intralinks, and I guest lecture at London Business School.</p>
+        <p>I hold a B.E. in Electronics &amp; Communications Engineering from SDM College of Engineering, Visvesvaraya Technological University.</p>
+        <h3>Selected publications</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2401.00081">arXiv:2401.00081</a></li>
+          <li><a href="https://arxiv.org/abs/2403.14724">arXiv:2403.14724</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="row" id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">Contact</h2>
+      <div class="body">
+        <p class="contact-line"><a href="mailto:deepak@transform-with.ai">deepak@transform-with.ai</a></p>
+        <p>Based in London. I reply within two working days.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Transform with AI Ltd.</p>
+    <p>Registered in England and Wales. Company number: [COMPANY NUMBER]. Registered office: [REGISTERED OFFICE ADDRESS].</p>
+  </footer>
+</div>
+</body>
+</html>
